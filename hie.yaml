@@ -1,0 +1,11 @@
+# Place this file at: /home/nij/Projects/haskell_intro/has-rec/hie.yaml
+cradle:
+  cabal:
+    cabalProject: "./haskell-recursion.cabal"
+    components:
+      # Configuration for your library component
+      - path: "./src" # Source directory for the library
+        component: "haskell-recursion:lib:haskell-recursion" # Assuming library is named 'has-rec'
+      # Configuration for your test-suite component
+      - path: "./test" # Source directory for the test-suite
+        component: "haskell-recursion:test:haskell-recursion-test" # Assuming test-suite is named 'has-rec-test'
